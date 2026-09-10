@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>About Me</title>
+    <title>Elie | Portfolio</title>
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <header>
         <h1>My Portfolio</h1>
 
-        <nav>
+        <nav aria-label="Primary navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -20,92 +21,122 @@
         </nav>
     </header>
 
-<main>
+    <main>
 
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
 
-        <p>
-            Hi, I'm Elie. I'm a university student interested in 
-            programming and artificial intelligence.
-        </p>
+            <p class="hero-intro">
+                Hi, I'm Elie.
+            </p>
 
-        <p>
-            This portfolio introduces who I am, the skills I am developing,
-            and how to contact me.
-        </p>
-    </section>
+            <p>
+                I'm a university student interested in programming
+                and artificial intelligence.
+            </p>
 
-
-    <section id="about">
-        <h2>About Me</h2>
-
-        <p>
-            I am a university student with a strong interest in 
-            software development, and artificial intelligence.
-        </p>
-
-        <p>
-            I enjoy learning new technologies, solving problems, and working on
-            projects that help me improve my programming and technical skills.
-        </p>
-
-        <img src="images/me.png" alt="Photo of Elie" >
-
-        <p>
-            Outside of university, I enjoy sports, spending time with friends,
-            and learning about new developments in technology.
-        </p>
-    </section>
+            <p>
+                This portfolio introduces who I am, the skills I am developing,
+                and how to contact me.
+            </p>
+        </section>
 
 
-    <section id="skills">
-        <h2>My Skills</h2>
+        <section id="about">
+            <h2>About Me</h2>
 
-        <p>
-            Some of the technical skills I am currently developing include:
-        </p>
+            <div class="about-content">
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Git and GitHub</li>
-            <li>Artificial Intelligence and Machine Learning</li>
-        </ul>
-    </section>
+                <img src="images/me.png" alt="Photo of Elie">
 
+                <div class="about-text">
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+                    <p>
+                        I am a university student with a strong interest in
+                        software development and artificial intelligence.
+                    </p>
 
-        <p>
-            If you would like to contact me, you can use the form below.
-        </p>
+                    <p>
+                        I enjoy learning new technologies, solving problems, and
+                        working on projects that help me improve my programming
+                        and technical skills.
+                    </p>
 
-        <form>
+                    <p>
+                        Outside of university, I enjoy sports, spending time with
+                        friends, and learning about new developments in technology.
+                    </p>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+                </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            </div>
+        </section>
 
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <p>
+                Some of the technical skills I am currently developing include:
+            </p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
 
 
+        <section id="contact">
+            <h2>Contact Me</h2>
 
-            <button type="submit">Send</button>
+            <p>
+                If you would like to contact me, you can use the form below.
+            </p>
 
-        </form>
-    </section>
+            <form>
 
-</main>
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
     <footer>
-        <p>© 2026 Elie</p>
+        <p>© 2026 Elie | Personal Portfolio</p>
     </footer>
 
 </body>
